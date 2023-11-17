@@ -1,0 +1,159 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+        <!--  PAGE HEADING -->
+        <section class="page-header" data-stellar-background-ratio="1.2">
+
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-sm-12 text-center">
+
+
+                        <h3>
+                            Products
+                        </h3>
+
+                        <p class="page-breadcrumb">
+                            <a routerLink="">Home</a> / Products
+                        </p>
+
+
+                    </div>
+
+                </div> <!-- end .row  -->
+
+            </div> <!-- end .container  -->
+
+        </section> <!-- end .page-header  -->
+
+
+        <!--  MAIN CONTENT  -->
+        
+        <section class="section-content-block section-contact-block no-bottom-padding">
+
+            <div class="container">
+
+                <div class="row">
+                    
+                    <div class ="col-md-12">
+                   <h2 class="contact-title">Enregistrer un produit</h2>                           
+                    </div>               
+                    
+                    <div class="col-md-3">
+                        
+                            <ul class="contact-info">
+                                <li>
+                                    <span class="icon-container"><i class="fa fa-home"></i></span>
+                                    <address>cocody,abidjan</address>
+                                </li>
+                            </ul>                        
+                        
+                    </div>
+                    
+                    <div class="col-md-3">
+                        
+                            <ul class="contact-info">
+                              
+                                <li>
+                                    <span class="icon-container"><i class="fa fa-phone"></i></span>
+                                    <address><a href="#">+225 0707220309</a></address>
+                                </li>
+                               
+                            </ul>                        
+                        
+                    </div>
+
+                    <div class="col-md-3">
+                            <ul class="contact-info">
+                                <li>
+                                    <span class="icon-container"><i class="fa fa-envelope"></i></span>
+                                    <address><a href="mailto:">catep@catep.ci</a></address>
+                                </li>
+                            </ul>                        
+                        
+                    </div>
+
+                    <div class="col-md-3">
+                        
+                            <ul class="contact-info">
+                                <li>
+                                    <span class="icon-container"><i class="fa fa-globe"></i></span>
+                                    <address><a href="#">www.catep.com</a></address>
+                                </li>
+                            </ul>                        
+                        
+                    </div>                    
+                    
+                </div> 
+                
+            </div>
+            
+        </section>
+
+        <section class="section-content-block section-contact-block">
+
+            <div class="container">
+
+                <div class="row">
+                                       
+                    <div class="col-sm-6 wow fadeInLeft">
+
+                        <div class="contact-form-block">
+
+                            <h2 class="contact-title">Renseiger les dtails du produits</h2>
+
+                            <form role="form" action="#" method="post" id="contact-form">
+
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Enter product's name" data-msg="Enter product's name" />
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control" rows="10" name="description" id="description" placeholder="Please Write description" data-msg="Please Write description" ></textarea>
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="number" class="form-control" id="price" name="price" placeholder="Enter your price" data-msg="Enter your price" />
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="file" class="form-control" id="image" name="image"  />
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="test" class="form-control" id="test" name="test" placeholder="Enter your slug" data-msg="Enter your slug" />
+                                </div>  
+                             
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-custom">Send Now</button>
+                                </div>
+
+                            </form>
+
+                        </div> <!-- end .contact-form-block  -->
+
+                    </div> <!--  end col-sm-6  -->
+                    
+                    <div class="col-sm-6 wow fadeInRight">
+
+                            <h2 class="contact-title">Our Location</h2>
+                                   
+
+                            <div class="section-google-map-block wow fadeInUp">
+
+                                <div id="map_canvas"></div>
+
+                            </div> <!-- end .section-content-block  -->                            
+
+                    </div> <!--  end col-sm-6  -->                    
+                    
+                </div> <!-- end row  -->
+
+            </div> <!--  end .container -->
+
+        </section> <!-- end .section-content-block  -->
+        
+
+{% endblock  %}

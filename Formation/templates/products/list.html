@@ -1,0 +1,126 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<section class="page-header" data-stellar-background-ratio="1.2">
+
+    <div class="container">
+
+      <div class="row">
+
+          <div class="col-sm-12 text-center">
+
+
+              <h3>
+              </h3>
+
+              <p class="page-breadcrumb">
+                  <a href="">Home</a> /  DISPOSITION DE LA GALERIE
+              </p>
+
+
+          </div>
+
+     </div> <!-- end .row  -->
+
+ </div> <!-- end .container  -->
+
+</section> <!-- end .page-header  -->
+
+<!--  GALLERY CONTENT  -->
+
+<section class="section-content-block section-secondary-bg  no-bottom-padding">
+
+    <div class="container">
+        
+        <div class="row section-heading-wrapper">
+            
+            <div class="col-md-12 col-sm-12 text-center">
+                <h2 class="section-heading">GALERIE DE PHOTOS</h2>
+                <p class="section-subheading">Explorez tout sur nos activités dans un cadre qui vous permettra d'avoir une idée claire de la façon dont nous travaillons et de la manière dont vous en bénéficierez.</p>
+            </div> <!-- end .col-sm-10  -->                      
+            
+
+        </div> <!-- end .row  -->
+    
+    </div> <!--  end .container -->
+  
+    <div class="container-fluid wow fadeInUp">
+        ggggggggggggg
+        {% for product in product %}
+        <div class="row no-padding-gallery">
+
+            <div class="col-md-3 col-sm-6 col-xs-12 gallery-container">
+
+                <a class="gallery-light-box xs-margin" data-gall="myGallery" href="static/images/gallery_1.jpg" height="150" width="150">
+
+                    <figure class="gallery-img">
+
+                        <img src="static/images/gallery_1.jpg"  height="150" width="150"alt="gallery image" />
+
+                    </figure> <!-- end .cause-img  -->
+
+                </a> <!-- end .gallery-light-box  -->
+
+            </div><!-- end .col-sm-3  -->
+
+        </div> <!-- end .row  -->
+        {% endfor %}
+        <div class="row no-padding-gallery">
+
+            <div class="col-md-3 col-sm-6 col-xs-12 gallery-container">
+
+                <a class="gallery-light-box xs-margin" data-gall="myGallery" href="static/images/gallery_1.jpg" height="150" width="150">
+
+                    <figure class="gallery-img">
+
+                        <img src="static/images/gallery_5.jpg" height="150" width="150" alt="gallery image" />
+
+                    </figure> <!-- end .cause-img  -->
+
+                </a> <!-- end .gallery-light-box  -->
+
+            </div><!-- end .col-sm-3  -->
+
+
+        </div> <!-- end .row  -->
+        
+    </div><!-- end .container-fluid  -->
+
+</section> <!-- end .section-content-block  -->
+
+<!--  NEWSLETTER SECTION -->
+
+<section class="section-content-block section-newsletter section-secondary-bg">
+
+    <div class="container wow fadeInUp">  
+            
+            <div class="row section-heading-wrapper">
+
+                <div class="col-md-12 col-sm-12 text-center">
+                    <h2 class="section-heading">SUBSCRIBE NEWSLETTER</h2>
+                    <p class="section-subheading">Subscribe and Get in touch with us and get regular updates from us and follow our instructions for heart-healthy life. </p>                                                           
+                </div> <!-- end .col-sm-10  -->                      
+
+            </div> <!--  end .row  -->
+            
+            <div class="row">  
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="horizontal-newsletter">
+                        <form id="mc-form" class="mc-form fix" action="#">
+                            <div class="news-subscription">
+                                <input id="mc-email" name="EMAIL" placeholder="Email Address..." type="email">
+                                <button id="mc-submit" type="submit"> <i class="fa fa-location-arrow"></i> </button>
+                            </div>
+                        </form>
+                    </div> <!--  end .footer-widget  -->
+                </div> <!--  end .col-md-3 col-sm-6 -->
+
+            </div> <!--  end .row -->
+    </div>
+</section> <!--  end .section-newsletter -->
+
+
+<!-- START FOOTER  -->
+
+{% endblock  %}
